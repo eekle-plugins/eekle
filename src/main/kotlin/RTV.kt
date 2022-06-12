@@ -20,7 +20,7 @@ object RTV {
 
     val requiredVotes: Int
         get() {
-            return (Groups.player.size() + 1) / 2
+            return Math.ceil((Groups.player.size() + 1) / 2.0) as Int
         }
 
     fun checkAndUpdate(): String? {
