@@ -1,8 +1,8 @@
 {
-  "name": "mindustry-plugin-kt",
-  "displayName": "Mindustry Plugin Kotlin",
-  "author": "Seungjae Park",
-  "description": "Mindustry Server Plugin Template written by Kotlin",
+  "name": "eekle",
+  "displayName": "Eekle",
+  "author": "Allen-B1",
+  "description": "Minimalist mindustry server manager",
   "version": "1.0",
-  "main": "ExamplePlugin"
+  "main": "MainPlugin"
 }

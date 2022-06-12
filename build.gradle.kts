@@ -9,8 +9,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compileOnly("com.github.Anuken.Arc:arc-core:v104.6")
-    compileOnly("com.github.Anuken.Mindustry:core:v104.6")
+    compileOnly("com.github.Anuken.Arc:arc-core:v135.2")
+    compileOnly("com.github.Anuken.Mindustry:core:v135.2")
+    compileOnly("com.github.Anuken.Mindustry:server:v135.2")
 }
 
 tasks {
@@ -23,6 +24,6 @@ tasks {
     }
 
     jar {
-        from(configurations.compileClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+        from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
     }
 }

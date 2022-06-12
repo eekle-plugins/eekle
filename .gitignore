@@ -127,3 +127,5 @@ gradle-app.setting
 
 ### Gradle Patch ###
 **/build/
+
+test.sh
